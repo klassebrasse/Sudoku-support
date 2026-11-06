@@ -22,47 +22,131 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="lead">Last updated: August 2026</p>
+    <p class="lead">Last updated: November 2026</p>
 
     <p>
       This Privacy Policy describes how the Sudoku app ("the app", "we", "us")
       handles information. Sudoku is designed to work offline-first: the app
-      functions fully without an internet connection, and does not require
-      an account.
+      functions fully without an internet connection, and an account is
+      optional. If you don't sign in, your games and settings stay on your
+      device.
     </p>
 
     <h2>Information Collected</h2>
-    <p>
+    <p><strong>On your device, always.</strong>
       The app stores your puzzle progress (the current board, notes, elapsed
-      time, difficulty, and hints used) and your app settings (such as timer,
-      haptics, sound, theme, and input preferences) on your device. The app
-      does not ask for or collect your name, email address, contact list,
-      location, or any other personal information.
+      time, difficulty and hints used), your game history and statistics
+      (including your daily streak), and your app settings (such as timer,
+      haptics, sound, theme, language and input preferences). If you sign in,
+      your sign-in session is kept in your device's secure storage (Keychain).
+    </p>
+    <p><strong>If you sign in (optional).</strong>
+      You can sign in with Apple or Google to back up your games and appear
+      on the leaderboard. We then store:
+    </p>
+    <ul>
+      <li>
+        An account identifier and the email address the sign-in provider
+        shares with us. With Sign in with Apple you can choose to hide your
+        email address. Google may also share your name and profile picture;
+        the app doesn't use or display them.
+      </li>
+      <li>The username you choose.</li>
+      <li>
+        Your game results: for each game, the mode (daily or free play),
+        difficulty, which daily puzzle it was, whether it was completed, your
+        time, mistakes, hints and notes used, number of moves, when it was
+        started and finished, and the app version and platform it was played
+        on.
+      </li>
+    </ul>
+    <p><strong>If you turn on notifications (signed in only).</strong>
+      We store a push token for your device, your device's platform, its
+      time zone and your app language, linked to your account, together with
+      your notification preferences and a log of the notifications sent to
+      you.
+    </p>
+    <p>
+      The app does not ask for or collect your contact list, location,
+      photos, or any other personal information.
     </p>
 
     <h2>How Information Is Used</h2>
+    <ul>
+      <li>To let you resume a puzzle and remember your preferences.</li>
+      <li>
+        To back up your games, statistics and streak, and restore them when
+        you sign in on another device.
+      </li>
+      <li>To show the daily leaderboard (see below).</li>
+      <li>
+        To send you the daily puzzle reminder and occasional announcements,
+        at a sensible local time and in your language, and to make sure no
+        notification is sent twice.
+      </li>
+    </ul>
     <p>
-      The puzzle progress and settings saved on your device are used only to
-      let you resume a puzzle in progress and to remember your preferences
-      between sessions. This information is not used for any other purpose.
+      We don't sell your information, use it for advertising, or share it
+      with anyone except the service providers listed below, who process it
+      on our behalf to run the app.
+    </p>
+
+    <h2>Leaderboard</h2>
+    <p>
+      If you're signed in, your first completed attempt at each day's
+      published daily puzzle appears on that day's leaderboard, showing your
+      username, time, mistakes and hints used. This includes daily puzzles
+      you played on the device before signing in, since signing in backs up
+      your existing games. The leaderboard is visible to
+      everyone who uses the app, including people who aren't signed in. Your
+      email address and account identifier are never shown.
+    </p>
+
+    <h2>Notifications</h2>
+    <p>
+      Notifications are off until you turn them on: after you finish a daily
+      puzzle while signed in, the app offers a daily reminder, and your
+      device asks for permission only if you accept. Notifications are
+      delivered through Expo's push service and Apple Push Notification
+      service. Signing out removes your device's push token from our
+      servers. You can turn notifications off at any time in your device's
+      settings.
     </p>
 
     <h2>Data Storage</h2>
     <p>
-      All puzzle progress and settings are stored locally on your device
-      only, using on-device storage. This data is not transmitted to, or
-      stored on, any server operated by us. The app can be used fully
-      offline, and this locally stored data never leaves your device as part
-      of normal app use.
+      Puzzle progress, game history and settings are stored on your device.
+      If you sign in, your account, username, game results and notification
+      data are also stored on our backend, hosted by Supabase. If you don't
+      sign in, nothing about your games is sent to our servers.
+    </p>
+    <p>
+      The app also downloads the daily puzzles and checks for app updates
+      over the internet. These requests don't include your games or account
+      information, but like any internet request they include standard
+      technical information, such as your IP address and app version, which
+      our service providers may log for security and operations.
     </p>
 
     <h2>Third-Party Services</h2>
+    <ul>
+      <li>
+        <strong>Supabase</strong>: our backend (database, sign-in and server
+        functions), which stores the account data described above.
+      </li>
+      <li>
+        <strong>Apple</strong>: Sign in with Apple, Apple Push Notification
+        service, and app distribution through the App Store.
+      </li>
+      <li><strong>Google</strong>: Sign in with Google.</li>
+      <li>
+        <strong>Expo</strong>: delivers push notifications to Apple's service
+        and delivers app updates.
+      </li>
+    </ul>
     <p>
-      The app does not integrate any third-party analytics, advertising, or
-      backend/cloud services. The app is distributed through the Apple App
-      Store, and app installation and updates may involve standard
-      Apple/App Store infrastructure, which is outside our control and
-      governed by Apple's own privacy practices.
+      Each provider handles information under its own privacy practices.
+      The app does not integrate any analytics or advertising services.
     </p>
 
     <h2>Analytics</h2>
@@ -78,40 +162,62 @@
       advertising networks or ad identifiers.
     </p>
 
-    <h2>Account Information</h2>
+    <h2>Your Choices</h2>
+    <ul>
+      <li>
+        You can use the whole app without an account. Nothing about your
+        games leaves your device then.
+      </li>
+      <li>
+        <strong>Sign out</strong> ends your session on that device and
+        removes its push token from our servers. Your games stay on the
+        device.
+      </li>
+      <li>
+        <strong>Delete your account</strong> in Settings &rarr; Account. This
+        permanently deletes your account, username, backed-up game results,
+        push tokens, notification preferences and notification log from our
+        servers. The app then offers to delete the games stored on your
+        device too.
+      </li>
+      <li>
+        <strong>Export your data</strong> or <strong>delete the data on your
+        device</strong> in Settings &rarr; Account.
+      </li>
+      <li>
+        <strong>Turn notifications off</strong> in your device's settings.
+      </li>
+    </ul>
     <p>
-      The app does not require or support user accounts, sign-in, or
-      sign-up. There is no account information to collect.
+      For any other request about your information, including access or
+      correction, contact us at the address below.
     </p>
 
     <h2>Children's Privacy</h2>
     <p>
-      The app is a general-audience puzzle game and does not knowingly
-      collect personal information from anyone, including children. Because
-      the app does not collect personal information, use it by children does
-      not raise the concerns that data-collection practices typically do
-      under regulations such as COPPA. [REPLACE THIS] — If you determine the
-      app is directed at children or add any data collection in the future,
-      update this section accordingly.
+      The app is a general-audience puzzle game and is not directed at
+      children under 13. We do not knowingly collect personal information
+      from children under 13. If you believe a child has created an account,
+      contact us and we will delete it.
     </p>
 
     <h2>Data Retention</h2>
     <p>
-      Puzzle progress and settings remain stored on your device until you
-      clear the app's data, uninstall the app, or reset it from within the
-      app (where such an option is provided). Since this information is
-      never sent to us, we do not hold a copy of it and cannot delete it on
-      your behalf — removing the app or its data from your device removes
-      it entirely.
+      Data on your device stays until you delete it in the app, clear the
+      app's data or uninstall the app. Data on our servers is kept for as
+      long as your account exists and is deleted when you delete your
+      account. A device's push token is removed when you sign out, or when
+      Apple reports that the device no longer accepts notifications from
+      the app.
     </p>
 
     <h2>Security</h2>
     <p>
-      Puzzle progress and settings are stored using your device's standard
-      on-device storage mechanisms and are protected by the security
-      features of your device's operating system. Because this data is not
-      transmitted to a server, it is not exposed to network-based risks
-      during normal app use.
+      Your sign-in session is stored in your device's secure storage. All
+      communication with our backend is encrypted in transit (HTTPS). On the
+      server, access rules ensure that each account can read only its own
+      data; only the leaderboard information described above is shared with
+      other users.
     </p>
 
     <h2>Changes to This Privacy Policy</h2>
